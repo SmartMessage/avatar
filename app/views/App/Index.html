@@ -1,0 +1,18 @@
+{{set . "title" "Avatar"}}
+{{append . "moreStyles" "css/avatar.css"}}
+{{template "header.html" .}}
+{{template "flash.html" .}}
+<div id="main_login"> 
+	<form class="form-lognin" action="/login">
+		<div class="input-prepend">
+			<input type="text" class="input-block-level" style="width:180px" placeholder="Email address" name="userName">
+			<span class="add-on" style="font-size:16px">@hotmail.com</span>
+		</div>
+		</br>
+		<div class="input-prepend">
+			<input type="password" class="input-block-level" style="width:180px" placeholder="Password" name="passwd">
+			<button type="submit" class="btn btn-small" style="min-height: 30px;width:114px;font-size:16px;color:#05050C; background:#666769">Sign in</button>
+		</div>
+	</form>
+</div>
+{{template "footer.html" .}}
